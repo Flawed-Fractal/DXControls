@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Products | DXControls</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#0b0d10;
+color:white;
+font-family:Inter,sans-serif;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 8%;
+background:#111;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+}
+
+.logo span{
+color:#2ec84d;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:40px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+transition:.25s;
+}
+
+nav a:hover{
+color:#2ec84d;
+}
+
+.hero{
+
+padding:120px 10%;
+text-align:center;
+
+background:
+radial-gradient(circle at top,#18331d 0%,transparent 45%),
+#0b0d10;
+
+}
+
+.hero h1{
+
+font-size:64px;
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+max-width:760px;
+margin:auto;
+font-size:20px;
+line-height:1.8;
+color:#aaa;
+
+}
+
+.products{
+
+padding:80px 8%;
+
+}
+
+.product{
+
+display:grid;
+grid-template-columns:1.1fr 1fr;
+gap:60px;
+align-items:center;
+
+margin-bottom:120px;
+
+}
+
+.image{
+
+height:430px;
+
+border-radius:12px;
+
+background:#13181d;
+
+border:2px dashed #2ec84d;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+color:#666;
+font-size:28px;
+
+}
+
+.info h2{
+
+font-size:42px;
+margin-bottom:10px;
+
+}
+
+.status{
+
+display:inline-block;
+
+background:#2ec84d;
+
+color:black;
+
+padding:6px 14px;
+
+font-size:14px;
+
+font-weight:600;
+
+border-radius:20px;
+
+margin-bottom:25px;
+
+}
+
+.info p{
+
+line-height:1.8;
+color:#bbb;
+margin-bottom:30px;
+
+}
+
+table{
+
+width:100%;
+border-collapse:collapse;
+
+margin-bottom:30px;
+
+}
+
+td{
+
+padding:12px;
+
+border-bottom:1px solid #222;
+
+}
+
+td:first-child{
+
+color:#888;
+width:180px;
+
+}
+
+.button{
+
+display:inline-block;
+
+padding:15px 28px;
+
+background:#2ec84d;
+
+color:black;
+
+font-weight:600;
+
+text-decoration:none;
+
+border-radius:6px;
+
+transition:.25s;
+
+}
+
+.button:hover{
+
+background:#43df62;
+
+}
+
+footer{
+
+padding:60px;
+text-align:center;
+color:#666;
+border-top:1px solid #222;
+
+}
+
+@media(max-width:900px){
+
+.product{
+
+grid-template-columns:1fr;
+
+}
+
+.hero h1{
+
+font-size:48px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+DX<span>Controls</span>
+</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="technology.html">Technology</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="applications.html">Applications</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>Products</h1>
+
+<p>
+Purpose-built autonomous systems, embedded electronics, and robotics engineered for performance, reliability, and scalability.
+</p>
+
+</section>
+
+<section class="products">
+
+<div class="product">
+
+<div class="image">
+
+Product Render / Photo
+
+</div>
+
+<div class="info">
+
+<h2>DXC-M1</h2>
+
+<div class="status">
+
+Prototype
+
+</div>
+
+<p>
+
+A compact autonomous aerial platform designed for rapid experimentation,
+embedded systems development, and advanced robotics research.
+
+</p>
+
+<table>
+
+<tr>
+
+<td>Category</td>
+
+<td>Micro UAV</td>
+
+</tr>
+
+<tr>
+
+<td>Weight</td>
+
+<td>---</td>
+
+</tr>
+
+<tr>
+
+<td>Flight Time</td>
+
+<td>---</td>
+
+</tr>
+
+<tr>
+
+<td>Power</td>
+
+<td>1S Li-Ion</td>
+
+</tr>
+
+<tr>
+
+<td>Navigation</td>
+
+<td>GPS / Visual / IMU</td>
+
+</tr>
+
+</table>
+
+<a href="#" class="button">
+
+View Datasheet
+
+</a>
+
+</div>
+
+</div>
+
+<div class="product">
+
+<div class="info">
+
+<h2>DXC-E100</h2>
+
+<div class="status">
+
+Development
+
+</div>
+
+<p>
+
+Custom embedded control electronics featuring integrated sensing,
+motor control, wireless communication, and expandable interfaces.
+
+</p>
+
+<table>
+
+<tr>
+
+<td>Processor</td>
+
+<td>ESP32 / STM32</td>
+
+</tr>
+
+<tr>
+
+<td>Interfaces</td>
+
+<td>SPI, I²C, UART, CAN</td>
+
+</tr>
+
+<tr>
+
+<td>Power</td>
+
+<td>1S–6S</td>
+
+</tr>
+
+<tr>
+
+<td>Firmware</td>
+
+<td>Custom RTOS</td>
+
+</tr>
+
+</table>
+
+<a href="#" class="button">
+
+View Datasheet
+
+</a>
+
+</div>
+
+<div class="image">
+
+PCB Image
+
+</div>
+
+</div>
+
+<div class="product">
+
+<div class="image">
+
+Future Product
+
+</div>
+
+<div class="info">
+
+<h2>Next Platform</h2>
+
+<div class="status">
+
+Concept
+
+</div>
+
+<p>
+
+Reserved for future robotic platforms, autonomous vehicles, sensors,
+or intelligent software products.
+
+</p>
+
+<table>
+
+<tr>
+
+<td>Launch</td>
+
+<td>TBD</td>
+
+</tr>
+
+<tr>
+
+<td>Status</td>
+
+<td>Research</td>
+
+</tr>
+
+</table>
+
+<a href="#" class="button">
+
+Coming Soon
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 DXControls
+
+</footer>
+
+</body>
+</html>
